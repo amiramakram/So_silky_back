@@ -34,7 +34,7 @@ class ClientController extends Controller
     public function store(StoreClientRequest $request)
     {
 
-        dd('asd');
+        
         $data = $request->all();
     
         $colorWhite = $data['color_White'];
