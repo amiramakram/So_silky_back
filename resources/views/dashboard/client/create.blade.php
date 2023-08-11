@@ -2,14 +2,16 @@
 
 
 @section('content')
+
 <div class="container d-flex mt-5 justify-content-center bg-white containBoxEdit"> 
     <div class="row w-75">
  
 <p class="mb-3 EditServices"> Add client</p>
 
-    <form action="{{route('client.store')}}" method="POST">
+    <form action="{{route('client.store')}}" method="POST" >
     @csrf
     @method('post')
+
 
   <div class="form-group mt-3">
     <label for="exampleInputEmail1">Name</label>

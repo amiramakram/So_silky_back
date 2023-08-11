@@ -11,7 +11,7 @@ class StoreClientRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -32,7 +32,7 @@ class StoreClientRequest extends FormRequest
             'color_gray' => 'required|number',
             'color_pink' => 'required|number',
             'color_beige' => 'required|number',
-            'total_price' => 'required|decimal|integer|string'
+            
         ];
     }
 }
