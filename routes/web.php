@@ -15,14 +15,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
 
 Auth::routes();
 
+
+// Route::get('login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
+// Route::post('login', 'App\Http\Controllers\Auth\LoginController@login');
+// Route::post('logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+
+
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index')->middleware('auth');
 
 
-Route::resource('client', ClientController::class);
+
+Route::get('/client', [ClientController::class, 'index'])->name('client.index')->middleware('auth');
+
+Route::get('/client/{client}', [ClientController::class, 'show'])->name('client.show')->middleware('auth');
+
+Route::get('/client/create', [ClientController::class, 'create'])->name('client.create');
+
+Route::post('/client', [ClientController::class, 'store'])->name('client.store');
+
+Route::get('/client/{client}/edit', [ClientController::class, 'edit'])->name('client.edit')->middleware('auth');
+
+Route::post('/client/{client}', [ClientController::class, 'update'])->name('client.update')->middleware('auth');
+
+Route::post('/client/{client}/delete', [ClientController::class, 'destroy'])->name('client.destroy')->middleware('auth');

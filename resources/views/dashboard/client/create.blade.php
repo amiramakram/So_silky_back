@@ -35,10 +35,10 @@
   @enderror
 
   <div class="form-group mt-3">
-    <label for="exampleInputEmail">phone_number</label>
+    <label for="exampleInputEmail">phone number</label>
     <input type="text" class="form-control" name="phone_number" 
     value="{{old('phone_number')}}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter phone_number">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter phone number">
   </div>
   @error('phone_number')
   <div class="alert alert-danger">{{$message}}</div>
@@ -63,14 +63,12 @@
   @error('zone')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
-
-
   
   <div class="form-group mt-3">
     <label for="exampleInputEmail">color White</label>
     <input type="text" class="form-control" name="color_White" 
     value="{{ old('color_White') }}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_White">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter number of color White">
   </div>
   @error('color_White')
   <div class="alert alert-danger">{{$message}}</div>
@@ -80,7 +78,7 @@
     <label for="exampleInputEmail">color black</label>
     <input type="text" class="form-control" name="color_black" 
     value="{{ old('color_black') }}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_black">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter number of color black">
   </div>
   @error('color_black')
   <div class="alert alert-danger">{{$message}}</div>
@@ -90,7 +88,7 @@
     <label for="exampleInputEmail">color gray</label>
     <input type="text" class="form-control" name="color_gray" 
     value="{{ old('color_gray') }}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_gray">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter number of color gray">
   </div>
   @error('color_gray')
   <div class="alert alert-danger">{{$message}}</div>
@@ -100,7 +98,7 @@
     <label for="exampleInputEmail">color pink</label>
     <input type="text" class="form-control" name="color_pink" 
     value="{{ old('color_pink') }}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_pink">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter number of  color pink">
   </div>
   @error('color_pink')
   <div class="alert alert-danger">{{$message}}</div>
@@ -112,7 +110,7 @@
     <label for="exampleInputEmail">color beige</label>
     <input type="text" class="form-control" name="color_beige" 
     value="{{ old('color_beige') }}"
-    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_beige">
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter number of  color beige">
   </div>
   @error('color_beige')
   <div class="alert alert-danger">{{$message}}</div>
@@ -128,6 +126,6 @@
 
 
 
-@endsection
+
 
 

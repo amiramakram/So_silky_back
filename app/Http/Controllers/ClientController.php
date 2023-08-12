@@ -87,7 +87,6 @@ class ClientController extends Controller
     public function update(UpdateClientRequest $request, Client $client)
     {
         $data = $request->all();
-    
         $colorWhite = $data['color_White'];
         $colorBlack = $data['color_black'];
         $colorGray = $data['color_gray'];
