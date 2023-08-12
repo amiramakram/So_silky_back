@@ -29,18 +29,15 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index')->middleware('auth');
 
-
-
-Route::get('/client', [ClientController::class, 'index'])->name('client.index')->middleware('auth');
-
-Route::get('/client/{client}', [ClientController::class, 'show'])->name('client.show')->middleware('auth');
-
 Route::get('/client/create', [ClientController::class, 'create'])->name('client.create');
-
 Route::post('/client', [ClientController::class, 'store'])->name('client.store');
 
-Route::get('/client/{client}/edit', [ClientController::class, 'edit'])->name('client.edit')->middleware('auth');
 
-Route::post('/client/{client}', [ClientController::class, 'update'])->name('client.update')->middleware('auth');
-
-Route::post('/client/{client}/delete', [ClientController::class, 'destroy'])->name('client.destroy')->middleware('auth');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/client', [ClientController::class, 'index'])->name('client.index');
+    Route::get('/client/{client}', [ClientController::class, 'show'])->name('client.show');
+   
+    Route::get('/client/{client}/edit', [ClientController::class, 'edit'])->name('client.edit');
+    Route::post('/client/{client}', [ClientController::class, 'update'])->name('client.update');
+    Route::post('/client/{client}/delete', [ClientController::class, 'destroy'])->name('client.destroy');
+});
