@@ -9,18 +9,18 @@
        
             <tr class="theadTR ">
                
-                <th>name</th>
-                <th>email</th>
-                <th>phone number</th>
-                <th>emirate</th>
-                <th>zone</th>
-                <th>color White</th>
-                <th>color black</th>
-                <th>color gray</th>
-                <th>color pink</th>
-                <th>color beige</th>
-                <th>total price</th>
-                <th>Actions</th>
+                <th>الاسم</th>
+                <th>الايميل</th>
+                <th>رقم الجوال</th>
+                <th>الامارة</th>
+                <th>المنطقة</th>
+                <th>اللون الابيض</th>
+                <th>اللون الاسود</th>
+                <th> اللون الرمادي</th>
+                <th> اللون الزهري</th>
+                <th> لون البيج</th>
+                <th>اجمالي السعر</th>
+                <th>تنفيذ امر</th>
             </tr>
      
      

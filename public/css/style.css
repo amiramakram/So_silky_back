@@ -1,4 +1,8 @@
-
+*{
+    font-family: 'Marhey',  'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 /* Icons Google */
 
@@ -33,13 +37,13 @@
     height: 60px;
     font-size: 25px;
     font-weight: 700;
-    border: 3px solid #0C80D5;
+    border: 3px solid #EDC6B5;
     border-radius: 20px 0px 0px 20px;
-    color: #0C80D5;
+    color:  rgb(84, 84, 84);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, #0C80D5 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, #EDC6B5 0px -2px 6px 0px inset;
 }
 @media only screen and (max-width: 1000px) {
     .WordSide{
@@ -72,7 +76,7 @@ table{
     border: 5px solid white;
 }
 .theadTR{
-    background-color: #0C80D5;
+    background-color: #EDC6B5;
     color: white;
     height: 50px;
     font-size: 25px;

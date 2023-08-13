@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,12 +61,12 @@
         @import url(
 "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
  
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+} */
 :root {
   --background-color1: #fafaff;
   --background-color2: #ffffff;
@@ -566,14 +566,14 @@ header {
         <div class="row">
         <div class="col-2 row sideNave p-0 m-0">
             <div class="image mt-3">
-                <img src="{{asset('images/statics/logo6.png')}}" alt="logo" class="logoImage">
+                <img src="{{asset('images/2-removebg-preview 3.png')}}" alt="logo" class="logoImage">
             </div>
             <div class="links p-0">
                 <div class="link p-0 mb-3">
-                <a href="{{route('dashboard.index')}}" class="nav-link"> <span class="material-symbols-outlined" style="font-size:35px;">dashboard</span><span class="WordSide">Dashboard</span></a>
+                <a href="{{route('dashboard.index')}}" class="nav-link"> <span class="material-symbols-outlined" style="font-size:35px;">dashboard</span><span class="WordSide">لوحة التحكم</span></a>
                 </div>
                 <div class="link p-0 mb-3">
-                <a href="{{route('client.index')}}" class="nav-link"><span class="material-symbols-outlined" style="font-size:35px;">design_services</span><span class="WordSide">Clients</span></a>
+                <a href="{{route('client.index')}}" class="nav-link"><span class="material-symbols-outlined" style="font-size:35px;">design_services</span><span class="WordSide">العملاء</span></a>
                 </div>
             </div>
             <div>
@@ -586,11 +586,11 @@ header {
         <nav class="navbar navbar-expand-md navbar-light  shadow-sm">
             <div class="container">
                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="col-12"dir="ltr" id="navbarSupportedContent">
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
