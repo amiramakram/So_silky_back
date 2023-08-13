@@ -38,7 +38,8 @@ class ClientController extends Controller
 
         
         $data = $request->all();
-    
+        dd($data);
+        
         $colorWhite = $data['color_White'];
         $colorBlack = $data['color_black'];
         $colorGray = $data['color_gray'];
@@ -60,10 +61,11 @@ class ClientController extends Controller
             'color_beige' => $colorBeige,
             'total_price' => ($totalPrice * 190),
         ]);
+       
     
         $client->save();
     
-        return redirect()->route('dashboard.client.index')->with('client', 'Client created successfully');
+        return redirect()->route('home')->with('client', 'Client created successfully');
     }
     
 

@@ -58,13 +58,13 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <style>
         body{
-            background-image:url('{{ asset('images/statics/carSer.jpg')}}');
+            background-image:url('{{ asset('images/statics/مخدات.jpeg')}}');
             background-repeat: no-repeat;
             background-size: cover;
             min-height:850px;
         }
         .card-header{
-            background-color: #0C80D5;
+            background-color: #EDC6B5;
             height:50px;
             color:white;
             font-size:25px;
@@ -72,7 +72,7 @@
         }
         .cardOfLogin{
             margin-top:150px;
-            box-shadow: #0C80D5 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            box-shadow: #EDC6B5 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             padding:0;
         }
         .card-body{
@@ -81,14 +81,14 @@
         }
         label{
             font-size:18px !important;
-            color:#0C80D5 !important;
+            color:#EDC6B5 !important;
             font-weight:700 !important;
         }
         .LoginBtn{
             margin-top: 40px;  
             width: 150px;
             height: 50px;
-            background-color: #0C80D5;
+            background-color: #EDC6B5;
             border: none;
             border-radius: 20px;
             text-align: center;

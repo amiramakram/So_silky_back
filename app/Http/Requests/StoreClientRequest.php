@@ -24,15 +24,15 @@ class StoreClientRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|email',
-            'phone_number' => 'required|string|number',
+            'phone_number' => 'required|string',
             'emirate' => 'required|string',
             'zone' => 'required|string',
-            'color_White' => 'nullable|number',
-            'color_black' => 'nullable|number',
-            'color_gray' => 'nullable|number',
-            'color_pink' => 'nullable|number',
-            'color_beige' => 'nullable|number',
-            
+            'color_White' => 'nullable',
+            'color_black' => 'nullable',
+            'color_gray' => 'nullable',
+            'color_pink' => 'nullable',
+            'color_beige' => 'nullable',
+
         ];
     }
 }

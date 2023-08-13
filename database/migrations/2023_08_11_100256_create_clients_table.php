@@ -14,15 +14,15 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->string('phone_number');
+            $table->string('phone_number')->nullable();
             $table->string('emirate');
             $table->string('zone');
-            $table->integer('color_White')->default(0);
-            $table->integer('color_black')->default(0);
-            $table->integer('color_gray')->default(0);
-            $table->integer('color_pink')->default(0);
-            $table->integer('color_beige')->default(0);
-            $table->integer('total_price');
+            $table->integer('color_White')->default(0)->nullable();
+            $table->integer('color_black')->default(0)->nullable();
+            $table->integer('color_gray')->default(0)->nullable();
+            $table->integer('color_pink')->default(0)->nullable();
+            $table->integer('color_beige')->default(0)->nullable();
+            $table->integer('total_price')->nullable();
             $table->timestamps();
         });
     }
