@@ -39,6 +39,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/client/{client}', [ClientController::class, 'show'])->name('client.show');
    
     Route::get('/client/{client}/edit', [ClientController::class, 'edit'])->name('client.edit');
-    Route::post('/client/{client}', [ClientController::class, 'update'])->name('client.update');
-    Route::post('/client/{client}/delete', [ClientController::class, 'destroy'])->name('client.destroy');
+    Route::put('/client/{client}', [ClientController::class, 'update'])->name('client.update');
+    Route::delete('/client/{client}/delete', [ClientController::class, 'destroy'])->name('client.destroy');
 });

@@ -24,15 +24,14 @@ class UpdateClientRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|email',
-            'phone_number' => 'required|string|number',
+            'phone_number' => 'required|string',
             'emirate' => 'required|string',
             'zone' => 'required|string',
-            'color_White' => 'required|number',
-            'color_black' => 'required|number',
-            'color_gray' => 'required|number',
-            'color_pink' => 'required|number',
-            'color_beige' => 'required|number',
-           
+            'color_White' => 'nullable|integer|string',
+            'color_black' => 'nullable|integer|string',
+            'color_gray' => 'nullable|integer|string',
+            'color_pink' => 'nullable|integer|string',
+            'color_beige' => 'nullable|integer|string',
         ];
     }
 }

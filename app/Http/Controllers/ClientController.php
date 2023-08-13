@@ -33,7 +33,6 @@ class ClientController extends Controller
     public function store(StoreClientRequest $request)
     {
 
-        
         $data = $request->all();
       
         
@@ -44,8 +43,6 @@ class ClientController extends Controller
         $colorBeige = $data['color_beige'];
     
         $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige;
-
-        
 
         $client = new Client([
             'name' => $data['name'],
@@ -112,7 +109,7 @@ class ClientController extends Controller
             'total_price' => ($totalPrice * 190),
         ]);
     
-        return redirect()->route('dashboard.client.index')->with('client', 'Client updated successfully');
+        return redirect()->route('client.index')->with('client', 'Client updated successfully');
     }
     
 
@@ -123,7 +120,7 @@ class ClientController extends Controller
     {
         $client->delete();
     
-        return redirect()->route('dashboard.client.index')->with('client', 'Client deleted successfully');
+        return redirect()->route('client.index')->with('client', 'Client deleted successfully');
     }
     
 }
