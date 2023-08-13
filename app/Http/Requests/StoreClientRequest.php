@@ -27,11 +27,11 @@ class StoreClientRequest extends FormRequest
             'phone_number' => 'required|string|number',
             'emirate' => 'required|string',
             'zone' => 'required|string',
-            'color_White' => 'required|number',
-            'color_black' => 'required|number',
-            'color_gray' => 'required|number',
-            'color_pink' => 'required|number',
-            'color_beige' => 'required|number',
+            'color_White' => 'nullable|number',
+            'color_black' => 'nullable|number',
+            'color_gray' => 'nullable|number',
+            'color_pink' => 'nullable|number',
+            'color_beige' => 'nullable|number',
             
         ];
     }
