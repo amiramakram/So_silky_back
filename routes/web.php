@@ -29,6 +29,7 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index')->middleware('auth');
 
+
 Route::get('/client/create', [ClientController::class, 'create'])->name('client.create');
 Route::post('/client', [ClientController::class, 'store'])->name('client.store');
 
