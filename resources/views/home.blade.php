@@ -682,15 +682,15 @@ font-family: 'Marhey';
     <select name="emirate" 
     id="dog-names"> 
         <option  value="الامارة">الامارة</option> 
-        <option  value="{{old('emirate')}}">دبي</option> 
-        <option  value="{{old('emirate')}}">ابوظبي</option> 
-        <option  value="{{old('emirate')}}">عجمان</option> 
-        <option  value="{{old('emirate')}}">العين</option> 
-        <option  value="{{old('emirate')}}">راس الخيمة</option> 
-        <option value="{{old('emirate')}}">ام القوين</option> 
-        <option  value="{{old('emirate')}}">الفجيرة</option> 
-        <option  value="{{old('emirate')}}">الشارقة</option> 
-        <option  value="{{old('emirate')}}">اخري</option> 
+        <option  value="دبي">دبي</option> 
+        <option  value="ابوظبي">ابوظبي</option> 
+        <option  value="عجمان">عجمان</option> 
+        <option  value="العين">العين</option> 
+        <option  value="راس الخيمة">راس الخيمة</option> 
+        <option value="ام القوين">ام القوين</option> 
+        <option  value="الفجيرة">الفجيرة</option> 
+        <option  value="الشارقة">الشارقة</option> 
+        <option  value="اخري">اخري</option> 
        
     </select>
     </div>
