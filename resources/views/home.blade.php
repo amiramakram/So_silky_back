@@ -43,7 +43,7 @@
 
 
 
-
+        
 body{
  
 font-family: 'Marhey';
@@ -170,7 +170,7 @@ font-family: 'Marhey';
 
 .login-box {
   position: absolute;
-  top: 420%;
+  top: 425%;
   left: 50%;
   width: 800px;
   padding: 40px;
@@ -192,7 +192,7 @@ font-family: 'Marhey';
   position: relative;
 }
 
-.login-box .user-box input {
+.login-box .user-box input ,select {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -202,6 +202,18 @@ font-family: 'Marhey';
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+}
+.login-box .user-box option {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: #6F6C6B  ;
+ 
 }
 .login-box .user-box label {
   position: absolute;
@@ -234,7 +246,11 @@ font-family: 'Marhey';
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
+  border:none;
+  border-radius:20px;
+  background-color:#EDC6B5;
+  color:#712504;
 }
 
 .login-box button:hover {
@@ -248,7 +264,7 @@ font-family: 'Marhey';
 }
 
 .login-box button span {
-  position:buttonbsolute;
+  position:Btnbsolute;
   display: block;
 }
 
@@ -258,7 +274,7 @@ font-family: 'Marhey';
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #451500);
- animation: btn-anim1 1s linear infinite;
+ animation: button-anim1 1s linear infinite;
 }
 
 @keyframes btn-anim1 {
@@ -371,8 +387,11 @@ font-family: 'Marhey';
 
 .login-box {
     width: 500px;
-  top: 650%;
+  top: 500%;
  
+}
+.float{
+  width:200px
 }
 }
 
@@ -554,7 +573,7 @@ font-family: 'Marhey';
 
 
 
-              <section id="colors">
+      <section id="colors">
                <div style="text-align: center;font-size: 2.8rem;margin-top: 50px;">الوان منتجنا</div>
                   <div class="swiper mySwiper">
                 
@@ -623,7 +642,7 @@ font-family: 'Marhey';
 
 <!-- order -->
 
-<section style="margin-top: 100px; background-color:#EDE1DC;height:1000px" dir="rtl">
+<section style="margin-top: 100px; background-color:#EDE1DC;height:1130px" dir="rtl">
     <div class="container">
         <div class="row">
         <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">اطلبي الان </div>
@@ -635,43 +654,109 @@ font-family: 'Marhey';
     @method('post')
 
     <div class="user-box " >
-      <input type="text" name="name" required="" >
+      <input type="text"  name="name" 
+    value="{{old('name')}}" required="" >
       <label >الاسم</label>
     </div>
     @error('name')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="email" name="email" required="">
+      <input type="email"  name="email" 
+    value="{{old('email')}}" required="">
       <label >الايميل</label>
     </div>
-   
+    @error('email')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
     <div class="user-box">
-      <input type="number" name="" required="">
+      <input type="number"  name="phone_number" 
+    value="{{old('phone_number')}}" required="">
       <label >رقم الجوال</label>
     </div>
     @error('phone_number')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="text" name="" required="">
-      <label >الامارة</label>
+   
+    <select name="emirate" 
+    id="dog-names"> 
+        <option  value="{{old('emirate')}}">الامارة</option> 
+        <option  value="{{old('emirate')}}">دبي</option> 
+        <option  value="{{old('emirate')}}">ابوظبي</option> 
+        <option  value="{{old('emirate')}}">عجمان</option> 
+        <option  value="{{old('emirate')}}">العين</option> 
+        <option  value="{{old('emirate')}}">راس الخيمة</option> 
+        <option value="{{old('emirate')}}">ام القوين</option> 
+        <option  value="{{old('emirate')}}">الفجيرة</option> 
+        <option  value="{{old('emirate')}}">الشارقة</option> 
+        <option  value="{{old('emirate')}}">اخري</option> 
+       
+    </select>
     </div>
     @error('emirate')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="text" name="" required="">
+      <input type="text"  name="zone" 
+    value="{{old('zone')}}" required="">
       <label >اسم المنطقة</label>
     </div>
     @error('zone')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
-    <button type="submit"  href="#">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+<div class="row" dir="ltr">
+  <div class="user-box" >
+      <input type="text" name="color_White" 
+    value="{{ old('color_White') }}" >
+      <label >(ادخل الكمية المطلوبة) ابيض</label>
+      @error('color_White')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+
+    </div>
+
+    <div class="user-box">
+      <input type="text" name="color_black" 
+    value="{{ old('color_black') }}" >
+      <label >(ادخل الكمية المطلوبة) اسود</label>
+      @error('color_black')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+
+    </div>
+    <div class="user-box">
+      <input type="text" name="color_gray" 
+    value="{{ old('color_gray') }}" >
+      <label >(ادخل الكمية المطلوبة) رمادي</label>
+      @error('color_gray')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+
+    </div>
+    <div class="user-box">
+      <input type="text" name="color_pink" 
+    value="{{ old('color_pink') }}" >
+      <label >(ادخل الكمية المطلوبة) زهري</label>
+      @error('color_pink')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+
+    </div>
+    <div class="user-box">
+      <input type="text" name="color_beige" 
+    value="{{ old('color_beige') }}" >
+      <label >(ادخل الكمية المطلوبة) بيج</label>
+      @error('color_beige')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+
+    </div>
+    </div>
+    
+
+    <button type="submit" class="Btn" href="#">
+      
     اطلبي
     </button>
   </form>
@@ -679,21 +764,23 @@ font-family: 'Marhey';
         </div>
     </div>
 
-    <div class="row float pt-3 ">
+    <div class="row float pt-3  d-flex justify-content-center">
                   تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="_blank">
                     <div class="floatIcon">
      <i class="fab fa-whatsapp my-float"></i>
     </div>
+</a>
+</div>
 </section>
 
 
 <div class="container mt-5" id="special" >
-  <div class="row">
+   <div class="row">
     <div class="d-flex justify-content-center">
       <p style="font-size: 2rem; font-weight: bold;color: #EDC6B5;margin-top:100px">بماذا نتميز !؟<img src="./images/download (2).png" alt="" width="50px"></p>
     </div>
-<div class="d-flex justify-content-center row">
-  <div class="col-md-4 col-12" >
+      <div class="d-flex justify-content-center row">
+       <div class="col-md-4 col-12" >
     <div class="d-flex justify-content-center">
       <img src="./images/cash-payment.png" alt="" width="100vw">
     </div>
@@ -719,18 +806,16 @@ font-family: 'Marhey';
   </div>
 </div>
 
-
 <div class="container mt-5">
   <div class="row">
-   
-
+ 
   <div class="row d-flex justify-content-center align-items-center" id="statics">
     <div class="col-md-5 col-12"> 
       <div class="d-flex flex-column align-items-center">
         <img src="./images/33308.png" alt="" width="100vw">
-        <p style="font-size: 1.7rem; text-align: center;" class="text-black">عدد العملاء</p>
+        <p style="font-size: 1.7rem; text-align: center;">عدد العملاء</p>
       </div>
-      <p style="font-size: 1.7rem; text-align: center;" class="text-black">+100K</p>
+      <p style="font-size: 1.7rem; text-align: center;">+100K</p>
     </div>
     <div class="col-md-5 col-12"> 
      <a href="#reviews" class="text-black">
@@ -738,14 +823,14 @@ font-family: 'Marhey';
         <img src="./images/feedback-icon-review-165788304.webp" alt="" width="100vw">
         <p style="font-size: 1.7rem; text-align: center;">اراء العملاء</p>
       </div>
-    
+     
+       </a>
     </div>
    
   </div>
-  </div>
-  </div>
 
-
+  </div>
+</div>
 
 <!-- Reviews -->
 
