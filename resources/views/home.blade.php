@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sosilky</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
     <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
@@ -12,15 +28,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=IBM+Plex+Sans+Arabic:wght@500&family=Marhey:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=IBM+Plex+Sans+Arabic:wght@500&family=Marhey:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
 
-
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
 
 <!-- MDB -->
 <link
@@ -34,13 +45,10 @@
 
 
 body{
-  font-family: 'Cairo', sans-serif;
-font-family: 'IBM Plex Sans Arabic', sans-serif;
-font-family: 'Marhey', cursive;
-font-family: 'Roboto', sans-serif;
+ 
+font-family: 'Marhey';
+    
 }
-
-/* ----------- SLIDER ------------ */
 .swiper{
   width: 100%;
 }
@@ -123,12 +131,258 @@ font-family: 'Roboto', sans-serif;
   cursor: pointer;
 }
 
+
+
+.imgService{
+    width: 100%;
+    height: 300px;
+}
+
+.serviceContent{
+    position: absolute;
+    bottom: 100;
+    margin-left:80px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(255, 255, 255, 0.826);
+    font-size: 12px;
+   text-align: center;
+}
+.title{
+    color: #EDC6B5;
+    font-size: 30px;
+    font-weight: 700;
+}
+.price{
+    margin-top: -13px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+.login-box {
+  position: absolute;
+  top: 420%;
+  left: 50%;
+  width: 800px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  right: 0;
+
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  
+  color: #EDC6B5;
+  font-size: 12px;
+}
+
+.login-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #EDC6B5;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box button:hover {
+  background: #EDC6B5;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #EDC6B5,
+              0 0 25px #EDC6B5,
+              0 0 50px #EDC6B5,
+              0 0 100px #EDC6B5;
+}
+
+.login-box button span {
+  position:buttonbsolute;
+  display: block;
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #451500);
+ animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #451500);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #451500);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #451500);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+.float{
+	position:fixed;
+    font-size:20px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  bottom:40px;
+	right:120px;
+    width:200px;
+	height:60px;
+    background-color:#EDC6B5;
+	color:#FFF;
+    padding-right: 7px;
+    border-radius:30px;
+}
+.floatIcon{
+    position:fixed;
+    width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#EDC6B5;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .serviceContent{
+   
+    margin-left:100px;
+    margin-bottom:50px;
+    
+}
+
+.login-box {
+    width: 500px;
+  top: 650%;
+ 
+}
+}
+
+
       </style>
 </head>
 <body>
 
   <nav class="navbar navbar-expand-lg bg-white fixed-top" dir="rtl">
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-family: 'Marhey',  'Roboto', sans-serif;">
       <a class="navbar-brand col-3" href="#"><img width="130px" src="./images/2-removebg-preview 3.png"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -136,7 +390,7 @@ font-family: 'Roboto', sans-serif;
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active fs-4" aria-current="page" href="#carouselExampleCaptions">الصفحة الرئيسية</a>
+            <a class="nav-link  fs-4" aria-current="page" href="#carouselExampleCaptions">الصفحة الرئيسية</a>
           </li>
           <li class="nav-item">
             <a class="nav-link fs-4" href="#Whysilky">لماذا سو سيلكي <span style="color: #EDC6B5;">؟!</span></a>
@@ -190,15 +444,15 @@ font-family: 'Roboto', sans-serif;
                     <!-- CSS -->
                     
                     
-              <section id="Whysilky">
-               <div style="text-align: center;font-size: 4rem;margin-top: 30px;">لماذا سو سيلكي <span style="color: #EDC6B5;">!؟</span></div>
+<section id="Whysilky">
+               <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">لماذا سو سيلكي <span style="color: #EDC6B5;">!؟</span></div>
                   <div class="swiper mySwiper">
                 
                     <div class="swiper-wrapper">
                 
                       <div class="card swiper-slide" style="box-shadow: none;border: none;">
                         <div class="card__image">
-                          <img src="./images/3-removebg-preview.png" alt="card image">
+                          <img src="./images/hair.jpg" alt="card image">
                         </div>
                         <div style="text-align: center;font-size:2rem;color: #EDC6B5;">يحافظ علي الشعر</div>
                       </div>
@@ -206,14 +460,14 @@ font-family: 'Roboto', sans-serif;
                     
                       <div class="card swiper-slide" style="box-shadow: none;border: none;">
                         <div class="card__image">
-                          <img src="./images/4-removebg-preview.png" alt="card image">
+                          <img src="./images/bacterial.jpg" alt="card image">
                         </div>
                         <div style="text-align: center;font-size:2rem;color: #EDC6B5;">مضاد للبكتريا</div>
                       </div>
                      
                       <div class="card swiper-slide" style="box-shadow: none;border: none;">
                         <div class="card__image">
-                          <img src="./images/2-removebg-preview.png" alt="card image">
+                          <img src="./images/Wrinkles.jfif" alt="card image">
                         </div>
                         <div style="text-align: center;font-size:2rem;color: #EDC6B5;">يقي من تجاعيد الوجه
                         </div>
@@ -221,59 +475,75 @@ font-family: 'Roboto', sans-serif;
                       
                       <div class="card swiper-slide" style="box-shadow: none;border: none;">
                         <div class="card__image">
-                          <img src="./images/1-removebg-preview.png" alt="card image">
+                          <img src="./images/butterfly.jpg" alt="card image">
                         </div>
-                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">الوان براقة</div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">حرير طبيعي %100</div>
                     </div>
                       </div>
                      
                     
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
-                      <a  href="https://api.whatsapp.com/send?phone=966593536157"><button dir="rtl" class="d-flex justify-content-center align-items-center" style="background-color:#EDC6B5; border: none; border-radius: 30px; display: flex; align-items: center;width: 200px;">
-                        <i class="fa-brands fa-whatsapp fa-lg mx-3" style="color: #ffffff;"></i>
-                          <p style="font-size: 1.2rem; color: white; font-weight: bold; text-align: center; display: flex; align-items: center; margin: 0;">اطلب الان</p>
-                      </button></a>
-                  </div>
                   
                   
                   
-                </section>
+                  
+</section>
+
+
+<section style="background-color:#EDC6B5;color:white;font-size:1.5rem">
+    <div class="container p-4 " >
+        <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="d-flex justify-content-center align-items-center mt-3 " style="background-color:#712504;border-radius:30px;box-shadow:white 2px 2px 2px 2px">شامل الشحن والضريبة</div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="d-flex justify-content-center">السعر</div>
+            <div class="row">
+               
+                <div class="col-6 d-flex justify-content-center">190AED</div>
+                <div class="col-6 d-flex justify-content-center"><del>
+                220AED
+                </del></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
 
 
                 <!-- posts section -->
-                <div class="container mt-5">
+               <div class="container mt-5">
                 <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" >
                   <div class="carousel-inner">
                     <div class="carousel-item active ">
                       <div class="row d-flex justify-content-center align-items-center">
-                      <div class="col-md-6 col-12">
-                      <img src="./images/71fI951qU3L.jpg" class="d-block w-100 " alt="..."  style="height: 600px;">
+                      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                      <img src="./images/71fI951qU3L.jpg" class="d-block w-75 " alt="..."  style="height: 360px;">
                     </div>
                       <div class="col-md-5 col-12">
                        
-                        <p style="font-size: 4rem;font-weight: bold;color: rgb(84, 84, 84);text-align: center;">%حرير طبيعي 100</p>
+                        <p style="font-size: 2.7rem;font-weight: bold;color: rgb(84, 84, 84);text-align: center;">%حرير طبيعي 100</p>
                       </div>
                     </div>
                     </div>
                     <div class="carousel-item ">
                       <div class="row d-flex justify-content-center align-items-center">
-                      <div class="col-md-6 col-12">
-                      <img src="./images/81ceGnbkABL.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+                      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                      <img src="./images/81ceGnbkABL.jpg" class="d-block  w-75 " alt="..."  style="height: 360px;">
                     </div>
                     <div class="col-md-5 col-12">
                        
-                        <p style="font-size: 4rem;font-weight: bold;color:  rgb(84, 84, 84);text-align: center;">نعومه فائقة وعالية الجودة</p>
+                        <p style="font-size: 2.7rem;font-weight: bold;color:  rgb(84, 84, 84);text-align: center;">نعومه فائقة وعالية الجودة</p>
                       </div>
                     </div>
                     </div>
                     <div class="carousel-item">
                       <div class="row d-flex justify-content-center align-items-center">
-                      <div class="col-md-6 col-12">
-                      <img src="./images/s-l1200.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+                      <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                      <img src="./images/s-l1200.jpg" class="d-block  w-75 " alt="..."  style="height: 360px;">
                     </div>
                     <div class="col-md-5 col-12">
-                        <p style="font-size: 4rem;font-weight: bold;color:  rgb(84, 84, 84);text-align: center;">ملمس ناعم وبارد</p>
+                        <p style="font-size: 2.7rem;font-weight: bold;color:  rgb(84, 84, 84);text-align: center;">ملمس ناعم وبارد</p>
                       </div>
                     </div>
                     </div>
@@ -283,10 +553,144 @@ font-family: 'Roboto', sans-serif;
               </div>
 
 
-<div class="container mt-5" id="special">
+
+              <section id="colors">
+               <div style="text-align: center;font-size: 2.8rem;margin-top: 50px;">الوان منتجنا</div>
+                  <div class="swiper mySwiper">
+                
+                    <div class="swiper-wrapper">
+                
+                      <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img1.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">الازرق</div>
+                      </div>
+                
+                    
+                      <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img2.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">اخضر</div>
+                      </div>
+                     
+                      <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img3.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">زهري
+                        </div>
+                    </div>
+                      
+                      <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img4.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">بيج</div>
+                    </div>
+                    <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img5.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">اسود</div>
+                    </div>
+                    <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img6.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">نبيتي</div>
+                    </div>
+                    <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img7.jpeg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">رمادي</div>
+                    </div>
+                      </div>
+                     
+                    
+                    </div>
+                  
+                  
+                  
+                  
+</section>
+
+<!-- products -->
+
+
+
+<!-- order -->
+
+<section style="margin-top: 100px; background-color:#EDE1DC;height:1000px" dir="rtl">
+    <div class="container">
+        <div class="row">
+        <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">اطلبي الان </div>
+
+        <div class="login-box">
+  
+  <form action="{{route('client.store')}}" method="POST" >
+    @csrf
+    @method('post')
+
+    <div class="user-box " >
+      <input type="text" name="name" required="" >
+      <label >الاسم</label>
+    </div>
+    @error('name')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+    <div class="user-box">
+      <input type="email" name="email" required="">
+      <label >الايميل</label>
+    </div>
+   
+    <div class="user-box">
+      <input type="number" name="" required="">
+      <label >رقم الجوال</label>
+    </div>
+    @error('phone_number')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label >الامارة</label>
+    </div>
+    @error('emirate')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label >اسم المنطقة</label>
+    </div>
+    @error('zone')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+    <button type="submit"  href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    اطلبي
+    </button>
+  </form>
+</div>
+        </div>
+    </div>
+
+    <div class="row float pt-3 ">
+                  تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="_blank">
+                    <div class="floatIcon">
+     <i class="fab fa-whatsapp my-float"></i>
+    </div>
+</section>
+
+
+<div class="container mt-5" id="special" >
   <div class="row">
     <div class="d-flex justify-content-center">
-      <p style="font-size: 2rem; font-weight: bold;color: #EDC6B5;">بماذا نتميز !؟<img src="./images/download (2).png" alt="" width="50px"></p>
+      <p style="font-size: 2rem; font-weight: bold;color: #EDC6B5;margin-top:100px">بماذا نتميز !؟<img src="./images/download (2).png" alt="" width="50px"></p>
     </div>
 <div class="d-flex justify-content-center row">
   <div class="col-md-4 col-12" >
@@ -318,28 +722,25 @@ font-family: 'Roboto', sans-serif;
 
 <div class="container mt-5">
   <div class="row">
-    <div class="d-flex justify-content-center align-items-center mb-5">
-     <a href="https://api.whatsapp.com/send?phone=966593536157"> <button dir="rtl" class="d-flex justify-content-center align-items-center" style="background-color:#EDC6B5; border: none; border-radius: 30px; display: flex; align-items: center;width: 200px;">
-      <i class="fa-brands fa-whatsapp fa-lg mx-3" style="color: #ffffff;"></i>
-          <p style="font-size: 1.2rem; color: white; font-weight: bold; text-align: center; display: flex; align-items: center; margin: 0;">اطلب الان</p>
-      </button></a>
-  </div>
+   
 
   <div class="row d-flex justify-content-center align-items-center" id="statics">
     <div class="col-md-5 col-12"> 
       <div class="d-flex flex-column align-items-center">
         <img src="./images/33308.png" alt="" width="100vw">
-        <p style="font-size: 1.7rem; text-align: center;">عدد العملاء</p>
+        <p style="font-size: 1.7rem; text-align: center;" class="text-black">عدد العملاء</p>
       </div>
-      <p style="font-size: 1.7rem; text-align: center;">+100K</p>
+      <p style="font-size: 1.7rem; text-align: center;" class="text-black">+100K</p>
     </div>
     <div class="col-md-5 col-12"> 
-      <div class="d-flex flex-column align-items-center">
+     <a href="#reviews" class="text-black">
+          <div class="d-flex flex-column align-items-center">
         <img src="./images/feedback-icon-review-165788304.webp" alt="" width="100vw">
         <p style="font-size: 1.7rem; text-align: center;">اراء العملاء</p>
       </div>
-      <p style="font-size: 1.7rem; text-align: center;">+100K</p>
+    
     </div>
+   
   </div>
   </div>
   </div>
@@ -357,39 +758,26 @@ font-family: 'Roboto', sans-serif;
         <div  class="row d-flex justify-content-center " dir="rtl">
         <div class="col-md-2 col-10">
        <img src="./images/user.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
 
        
-        <div class=" d-none d-md-block">
+        <div class="  d-md-block">
          <p class="text-dark">روعه روعه روعه وتغليف ايضا رائع</p>
         </div>
         </div>
         <div class="col-md-2 col-10">
           <img src="./images/user2.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-          
-           <div class=" d-none d-md-block">
+      
+           <div class="  d-md-block">
             <p class="text-dark">هذه هي المرة الرابعة التي أشتري فيها</p>
            </div>
            </div>
 
            <div class="col-md-2 col-10">
             <img src="./images/images (7).jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+       
             
-             <div class=" d-none d-md-block">
+             <div class="  d-md-block">
               <p class="text-dark">رائعة خذيتها بسعر التخفيض وطلعت نفس وصف مواصفات وتعليقات المشترين والتغليف ممتاز وناعمة وباردة والشحن سريع</p>
              </div>
              </div>
@@ -397,37 +785,25 @@ font-family: 'Roboto', sans-serif;
              <div  class="row d-flex justify-content-center " dir="rtl">
               <div class="col-md-2 col-10">
                 <img src="./images/user3.webp" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                 <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
                 
-                 <div class=" d-none d-md-block">
+                
+                 <div class="  d-md-block">
                   <p class="text-dark">جميل جدا وناعم وخامه روعه انصح فيه واكيد برجع اطلب الوان ثانيه ❤️❤️❤️.</p>
                  </div>
                  </div>
                  <div class="col-md-2 col-10">
                   <img src="./images/preview16.jpg" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
                   
-                   <div class=" d-none d-md-block">
+                   <div class="  d-md-block">
                     <p class="text-dark">كان هذا طلبي الثاني ، منتج جميل ،  وشعري اتحسسسن</p>
                    </div>
                    </div>
                    <div class="col-md-2 col-10">
                     <img src="./images/user4.png" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                     <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
                     
-                     <div class=" d-none d-md-block">
+                    
+                     <div class="  d-md-block">
                       <p class="text-dark">حلوة مره ومريحه في النوم اخذت ٣ اللوان وشكرا</p>
                      </div>
                      </div>
@@ -440,40 +816,27 @@ font-family: 'Roboto', sans-serif;
         <div  class="row d-flex justify-content-center " dir="rtl">
         <div class="col-md-2 col-10">
        <img src="./images/user5.webp" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
 
        
-        <div class=" d-none d-md-block">
+        <div class="  d-md-block">
          <p class="text-dark">رهييييب ووصلني بسرعه ونظافه واهتمام ب ادق التفاصيل♥️♥️♥️♥️ 🇸🇦🇸🇦🇸🇦
         </p>
         </div>
         </div>
         <div class="col-md-2 col-10">
           <img src="./images/user6.jpg" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-          
-           <div class=" d-none d-md-block">
+      
+           <div class="  d-md-block">
             <p class="text-dark">جودتها ممتازه وناعمه، انتبهو لتعليمات الغسيل واشترو ٢ افضل للتبديل بينهم</p>
            </div>
            </div>
 
            <div class="col-md-2 col-10">
             <img src="./images/user7.webp" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+     
             
-             <div class=" d-none d-md-block">
+             <div class="  d-md-block">
               <p class="text-dark">مريحة جدا وتساعد على النوم وباردة</p>
              </div>
              </div>
@@ -481,38 +844,26 @@ font-family: 'Roboto', sans-serif;
              <div  class="row d-flex justify-content-center " dir="rtl">
               <div class="col-md-2 col-10">
                 <img src="./images/user8.png" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                 <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
                 
-                 <div class=" d-none d-md-block">
+                
+                 <div class="  d-md-block">
                   <p class="text-dark">سويت اختبار الحرير عليها وطلع صدق حرير
                   </p>
                  </div>
                  </div>
                  <div class="col-md-2 col-10">
                   <img src="./images/user9.png" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+       
                   
-                   <div class=" d-none d-md-block">
+                   <div class="  d-md-block">
                     <p class="text-dark">اشتريت لعيلتنا كلهم من ذا المتجر جدا ممتاز توصيلهم خلال يومين</p>
                    </div>
                    </div>
                    <div class="col-md-2 col-10">
                     <img src="./images/user11.jpg" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                     <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+                    د
                     
-                     <div class=" d-none d-md-block">
+                     <div class="  d-md-block">
                       <p class="text-dark">الوانهم حلوة ومالقيتها بأي متجر قبل</p>
                      </div>
                      </div>
@@ -525,40 +876,28 @@ font-family: 'Roboto', sans-serif;
         <div  class="row d-flex justify-content-center " dir="rtl">
         <div class="col-md-2 col-10">
        <img src="./images/user12.png" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+       
 
        
-        <div class=" d-none d-md-block">
+        <div class="  d-md-block">
          <p class="text-dark">كنت متخوفة اطلب ويطلع ستان بس الحمد الله جدا الخامة رائعة وطلع حرير
         </p>
         </div>
         </div>
         <div class="col-md-2 col-10">
           <img src="./images/user13.webp" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
           
-           <div class=" d-none d-md-block">
+           <div class="  d-md-block">
             <p class="text-dark">تعاملهم جميل وسريع</p>
            </div>
            </div>
 
            <div class="col-md-2 col-10">
             <img src="./images/user14.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
             
-             <div class=" d-none d-md-block">
+             <div class=" d-md-block">
               <p class="text-dark">حسيت بفرق الصراحة غير عن المخدة القطن</p>
              </div>
              </div>
@@ -566,38 +905,25 @@ font-family: 'Roboto', sans-serif;
              <div  class="row d-flex justify-content-center " dir="rtl">
               <div class="col-md-2 col-10  ">
                 <img src="./images/user15.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                 <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
                 
-                 <div class=" d-none d-md-block">
+                
+                 <div class="  d-md-block">
                   <p class="text-dark">كان هذا طلبي الثاني ، منتج جميل ،  وشعري اتحسسسن
                   </p>
                  </div>
                  </div>
                  <div class="col-md-2 col-10">
                   <img src="./images/user16.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-       <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-        <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
+      
                   
-                   <div class=" d-none d-md-block">
+                   <div class="  d-md-block">
                     <p class="text-dark">جميل جدا وناعم وخامه روعه انصح فيه واكيد برجع اطلب الوان ثانيه ❤️❤️❤️</p>
                    </div>
                    </div>
                    <div class="col-md-2 col-10">
                     <img src="./images/user17.jfif" alt="" style="border-radius: 50%;width: 70px;height: 70px;" >
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i> 
-                    <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
-                     <i class="fa-solid fa-star fa-lg" style="color: #712504;"></i>
                     
-                     <div class=" d-none d-md-block">
+                     <div class="  d-md-block">
                       <p class="text-dark">رهييييب ووصلني بسرعه ونظافه واهتمام ب ادق التفاصيل♥️♥️♥️♥️!</p>
                      </div>
                      </div>
@@ -671,7 +997,7 @@ font-family: 'Roboto', sans-serif;
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #000;">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">sosilky.online</a>
+      <a class="text-white" href="https://mdbootstrap.com/">sosilky.com</a>
     </div>
     <!-- Copyright -->
   </footer>
