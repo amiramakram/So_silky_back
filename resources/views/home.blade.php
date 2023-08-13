@@ -681,7 +681,7 @@ font-family: 'Marhey';
    
     <select name="emirate" 
     id="dog-names"> 
-        <option  value="{{old('emirate')}}">الامارة</option> 
+        <option  value="الامارة">الامارة</option> 
         <option  value="{{old('emirate')}}">دبي</option> 
         <option  value="{{old('emirate')}}">ابوظبي</option> 
         <option  value="{{old('emirate')}}">عجمان</option> 
