@@ -32,7 +32,7 @@ class StoreClientRequest extends FormRequest
             'color_gray' => 'nullable',
             'color_pink' => 'nullable',
             'color_beige' => 'nullable',
-            
+
         ];
     }
 }

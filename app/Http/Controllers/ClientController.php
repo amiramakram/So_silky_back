@@ -38,7 +38,8 @@ class ClientController extends Controller
 
         
         $data = $request->all();
-    
+        dd($data);
+        
         $colorWhite = $data['color_White'];
         $colorBlack = $data['color_black'];
         $colorGray = $data['color_gray'];
