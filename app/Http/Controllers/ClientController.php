@@ -47,6 +47,10 @@ class ClientController extends Controller
     
         $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige+$colordarkRed+ $colorGreen+$colorBlue;
 
+        if ($totalPrice === 0) {
+            return redirect()->route('home')->with('error', 'المعذره يجب اختيار الالوان الكميه المطلوبه من كل لون');
+        }
+
         $client = new Client([
             'name' => $data['name'],
             'email' => $data['email'],

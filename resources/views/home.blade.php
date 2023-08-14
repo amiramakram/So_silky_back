@@ -46,7 +46,7 @@
         
 body{
  
-font-family: 'Marhey';
+font-family: 'Baloo Bhaijaan 2';
     
 }
 .swiper{
@@ -411,7 +411,7 @@ font-family: 'Marhey';
 }
 
 .login-box {
-    width: 500px;
+    width: 370px;
   /* top: 500%; */
  
 }
@@ -485,7 +485,7 @@ font-family: 'Marhey';
 <body>
 
   <nav class="navbar navbar-expand-lg bg-white fixed-top" dir="rtl">
-    <div class="container-fluid" style="font-family: 'Marhey',  'Roboto', sans-serif;">
+    <div class="container-fluid" style="font-family: 'Baloo Bhaijaan 2',  'Roboto', sans-serif;">
       <a class="navbar-brand col-3" href="#"><img width="130px" src="./images/2-removebg-preview 3.png"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -735,7 +735,7 @@ font-family: 'Marhey';
 <section style="margin-top: 100px; background-color:#EDE1DC;height:1320px; position: relative;" dir="rtl">
     <div class="container">
         <div class="row">
-        <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">اطلبي الان </div>
+      <div style="text-align: center;font-size: 3rem;margin-top: 30px;">اطلب الان </div></div>
 
         <div class="login-box">
         <!-- onsubmit="showPopup()" -->
@@ -751,7 +751,7 @@ font-family: 'Marhey';
     @error('name')
       <div class="alert alert-danger">{{$message}}</div>
       @enderror
-    <div class="user-box">
+    <div class="user-box" >
       <input type="email"  name="email"  placeholder="ادخل الايميل"
     value="{{old('email')}}" required="">
       <label >الايميل</label>
@@ -807,66 +807,66 @@ font-family: 'Marhey';
 
    
 
-    <div class="user-box">
+    <div class="user-box" dir="ltr" dir="ltr">
       <input type="number" name="color_black" placeholder="ادخل رقم"
     value="{{ old('color_black') }}" >
-      <label >(ادخل الكمية المطلوبة) اسود</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) اسود</label>
       </div>
       @error('color_black')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
    
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_gray"  placeholder="ادخل رقم"
     value="{{ old('color_gray') }}" >
-      <label >(ادخل الكمية المطلوبة) رمادي</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) رمادي</label>
       </div>
       @error('color_gray')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
     
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_pink"  placeholder="ادخل رقم"
     value="{{ old('color_pink') }}" >
-      <label >(ادخل الكمية المطلوبة) زهري</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) زهري</label>
       </div>
       @error('color_pink')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
     
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_beige"  placeholder="ادخل رقم"
     value="{{ old('color_beige') }}" >
-      <label >(ادخل الكمية المطلوبة) بيج</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) بيج</label>
       </div>
       @error('color_beige')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
    
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_darkRed"  placeholder="ادخل رقم"
       value="{{ old('color_darkRed') }}" >
-      <label >(ادخل الكمية المطلوبة) نبيتي</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) نبيتي</label>
       </div>
 
       @error('color_darkRed')
       <div class="alert alert-danger">{{$message}}</div>
       @enderror
     
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_green"  placeholder="ادخل رقم"
       value="{{ old('color_green') }}" >
-      <label >(ادخل الكمية المطلوبة) اخضر</label>
+      <label >(ادخل الكمية المطلوبة-اختياري) اخضر</label>
       </div>
       @error('color_green')
       <div class="alert alert-danger">{{$message}}</div>
       @enderror
    
     
-    <div class="user-box">
+    <div class="user-box" dir="ltr">
       <input type="number" name="color_blue"  placeholder="ادخل رقم"
       value="{{ old('color_blue') }}" >
       <label >(ادخل الكمية المطلوبة-اختياري) ازرق</label>
@@ -879,7 +879,7 @@ font-family: 'Marhey';
 
     <button type="submit" class="Btn" href="#">
       
-    اطلبي
+  اطلب
     </button>
     </form>
     </div>
@@ -893,8 +893,10 @@ font-family: 'Marhey';
 
 <div id="success-popup" class="popup">
     <div class="popup-content">
-        <p>تم استلام طلبك بنجاح</p>
+
+        <p>مبرووك تم اتمام طلبك بنجاح</p>
         <a href="{{ route('home') }}"> <button class="Done">تم</button>  </a>
+
     </div>
 </div>
 
@@ -906,7 +908,7 @@ font-family: 'Marhey';
 
 
     <div class="row float pt-3  d-flex justify-content-center">
-                  تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="">
+                  تواصل علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="">
                     <div class="floatIcon">
                        <i class="fab fa-whatsapp my-float"></i>
                     </div>
@@ -1263,18 +1265,6 @@ font-family: 'Marhey';
                
             </div>
         </div>
-
-        
-              <script>
-          function showPopup() {
-              document.getElementById("success-popup").style.display = "block";
-          }
-
-          function closePopup() {
-              document.getElementById("success-popup").style.display = "none";
-          }
-          </script>
-        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"
