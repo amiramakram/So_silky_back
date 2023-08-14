@@ -20,7 +20,11 @@ class Client extends Model
         'color_gray',
         'color_pink',
         'color_beige',
+        'color_darkRed',
+        'color_green',
+        'color_blue',
         'total_price',
+
     ];
 
     

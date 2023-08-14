@@ -113,9 +113,33 @@
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
-  
- 
-
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail">color darkRed</label>
+    <input type="text" class="form-control" name="color_darkRed" 
+    value="{{ $client->color_darkRed }}"
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_White">
+  </div>
+  @error('color_darkRed')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail">color green</label>
+    <input type="text" class="form-control" name="color_green" 
+    value="{{ $client->color_green }}"
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_White">
+  </div>
+  @error('color_green')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
+  <div class="form-group mt-3">
+    <label for="exampleInputEmail">color blue</label>
+    <input type="text" class="form-control" name="color_blue" 
+    value="{{ $client->color_blue }}"
+    id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter color_blue">
+  </div>
+  @error('color_blue')
+  <div class="alert alert-danger">{{$message}}</div>
+  @enderror
     <button type="submit" class="addButton mt-3">Edit</button>
 </form>
     </div>

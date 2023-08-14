@@ -32,6 +32,9 @@ class UpdateClientRequest extends FormRequest
             'color_gray' => 'nullable|integer|string',
             'color_pink' => 'nullable|integer|string',
             'color_beige' => 'nullable|integer|string',
+            'color_darkRed'=> 'nullable|integer|string'
+            ,'color_green'=>'nullable|integer|string'
+            ,'color_blue'=>'nullable|integer|string'
         ];
     }
 }

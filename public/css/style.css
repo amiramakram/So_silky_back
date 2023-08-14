@@ -57,7 +57,7 @@
 .addButton{
     width: 200px;
     height: 50px;
-    background-color: #0C80D5;
+    background-color: #EDC6B5;
     border: none;
     border-radius: 20px;
     text-align: center;
@@ -72,7 +72,7 @@
     overflow-x: auto;
 }
 table{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba#0C80D5 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba#EDC6B5 0px -2px 6px 0px inset;
     border: 5px solid white;
 }
 .theadTR{
@@ -100,7 +100,7 @@ th, td {
 .cc{
     font-size: 16px;
     font-weight: 500;
-    color: #0C80D5;
+    color: #EDC6B5;
 }
 
 /* end index of services */
@@ -109,7 +109,7 @@ th, td {
 
 /* edit & add Services */
 .containBoxEdit{
-    color: #0C80D5;
+    color: #EDC6B5;
     font-weight: 500;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding-top: 20px;
@@ -117,7 +117,7 @@ th, td {
 label{
     font-size: 20px;
     font-weight: 700;
-    color: #0C80D5;
+    color: #EDC6B5;
 }
 input{
     font-size: 16px !important;

@@ -169,8 +169,9 @@ font-family: 'Marhey';
 
 
 .login-box {
+ 
   position: absolute;
-  top: 425%;
+  top: 55%;
   left: 50%;
   width: 800px;
   padding: 40px;
@@ -387,7 +388,7 @@ font-family: 'Marhey';
 
 .login-box {
     width: 500px;
-  top: 500%;
+  /* top: 500%; */
  
 }
 .float{
@@ -626,6 +627,12 @@ font-family: 'Marhey';
                         </div>
                         <div style="text-align: center;font-size:2rem;color: #EDC6B5;">رمادي</div>
                     </div>
+                    <div class="card swiper-slide" style="box-shadow: none;border: none;">
+                        <div class="card__image">
+                          <img src="./images/img8.jpg" alt="card image">
+                        </div>
+                        <div style="text-align: center;font-size:2rem;color: #EDC6B5;">ابيض</div>
+                    </div>
                       </div>
                      
                     
@@ -642,14 +649,14 @@ font-family: 'Marhey';
 
 <!-- order -->
 
-<section style="margin-top: 100px; background-color:#EDE1DC;height:1130px" dir="rtl">
+<section style="margin-top: 100px; background-color:#EDE1DC;height:1320px; position: relative;" dir="rtl">
     <div class="container">
         <div class="row">
         <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">اطلبي الان </div>
 
         <div class="login-box">
   
-  <form action="{{route('client.store')}}" method="POST" >
+           <form action="{{route('client.store')}}" method="POST" >
     @csrf
     @method('post')
 
@@ -659,8 +666,8 @@ font-family: 'Marhey';
       <label >الاسم</label>
     </div>
     @error('name')
-  <div class="alert alert-danger">{{$message}}</div>
-  @enderror
+      <div class="alert alert-danger">{{$message}}</div>
+      @enderror
     <div class="user-box">
       <input type="email"  name="email" 
     value="{{old('email')}}" required="">
@@ -705,73 +712,105 @@ font-family: 'Marhey';
     @error('zone')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
-<div class="row" dir="ltr">
-  <div class="user-box" >
-      <input type="number" name="color_White" 
-    value="{{ old('color_White') }}" >
-      <label >(ادخل الكمية المطلوبة) ابيض</label>
+
+  <div class="user-box " >
+      <input type="text"  name="color_White" 
+    value="{{ old('color_White') }}"  >
+      <label >ابيض (ادخل الكمية المطلوبة-اختياري)</label>
+    </div>
       @error('color_White')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
-    </div>
+   
 
     <div class="user-box">
       <input type="number" name="color_black" 
     value="{{ old('color_black') }}" >
       <label >(ادخل الكمية المطلوبة) اسود</label>
+      </div>
       @error('color_black')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
-    </div>
+   
     <div class="user-box">
       <input type="number" name="color_gray" 
     value="{{ old('color_gray') }}" >
       <label >(ادخل الكمية المطلوبة) رمادي</label>
+      </div>
       @error('color_gray')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
-    </div>
+    
     <div class="user-box">
       <input type="number" name="color_pink" 
     value="{{ old('color_pink') }}" >
       <label >(ادخل الكمية المطلوبة) زهري</label>
+      </div>
       @error('color_pink')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
 
-    </div>
+    
     <div class="user-box">
       <input type="number" name="color_beige" 
     value="{{ old('color_beige') }}" >
       <label >(ادخل الكمية المطلوبة) بيج</label>
+      </div>
       @error('color_beige')
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
+   
+    <div class="user-box">
+      <input type="number" name="color_darkRed" 
+      value="{{ old('color_darkRed') }}" >
+      <label >(ادخل الكمية المطلوبة) نبيتي</label>
+      </div>
 
-    </div>
-    </div>
+      @error('color_darkRed')
+      <div class="alert alert-danger">{{$message}}</div>
+      @enderror
     
+    <div class="user-box">
+      <input type="number" name="color_green" 
+      value="{{ old('color_green') }}" >
+      <label >(ادخل الكمية المطلوبة) اخضر</label>
+      </div>
+      @error('color_green')
+      <div class="alert alert-danger">{{$message}}</div>
+      @enderror
+   
+    
+    <div class="user-box">
+      <input type="number" name="color_blue" 
+      value="{{ old('color_blue') }}" >
+      <label >(ادخل الكمية المطلوبة-اختياري) ازرق</label>
+      </div>
+      @error('color_blue')
+      <div class="alert alert-danger">{{$message}}</div>
+      @enderror
+   
+
 
     <button type="submit" class="Btn" href="#">
       
     اطلبي
     </button>
-  </form>
-</div>
+    </form>
+    </div>
         </div>
     </div>
-
+    </section>
     <div class="row float pt-3  d-flex justify-content-center">
-                  تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="_blank">
+                  تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="">
                     <div class="floatIcon">
-     <i class="fab fa-whatsapp my-float"></i>
+                       <i class="fab fa-whatsapp my-float"></i>
+                    </div>
+                         </a>
     </div>
-</a>
-</div>
-</section>
+
 
 
 <div class="container mt-5" id="special" >

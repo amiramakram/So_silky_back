@@ -13,7 +13,7 @@ class ClientController extends Controller
 
     public function index()
     {
-        $client = Client::paginate(5);
+        $client = Client::get();
         return view('dashboard.client.index', ['clients' => $client]);
     }
 
@@ -41,8 +41,11 @@ class ClientController extends Controller
         $colorGray = $data['color_gray'];
         $colorPink = $data['color_pink'];
         $colorBeige = $data['color_beige'];
+        $colordarkRed = $data['color_darkRed'];
+        $colorGreen = $data['color_green'];
+        $colorBlue = $data['color_blue'];
     
-        $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige;
+        $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige+$colordarkRed+ $colorGreen+$colorBlue;
 
         $client = new Client([
             'name' => $data['name'],
@@ -55,6 +58,9 @@ class ClientController extends Controller
             'color_gray' => $colorGray,
             'color_pink' => $colorPink,
             'color_beige' => $colorBeige,
+           'color_darkRed'=> $colordarkRed,
+           'color_green'=>$colorGreen
+            ,'color_blue'=>$colorBlue,
             'total_price' => ($totalPrice * 190),
         ]);
        
@@ -92,8 +98,14 @@ class ClientController extends Controller
         $colorGray = $data['color_gray'];
         $colorPink = $data['color_pink'];
         $colorBeige = $data['color_beige'];
+        $colordarkRed = $data['color_darkRed'];
+        $colorGreen = $data['color_green'];
+        $colorBlue = $data['color_blue'];
     
-        $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige;
+        $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige+$colordarkRed+ $colorGreen+$colorBlue;
+
+       
+            
     
         $client->update([
             'name' => $data['name'],
@@ -106,6 +118,9 @@ class ClientController extends Controller
             'color_gray' => $colorGray,
             'color_pink' => $colorPink,
             'color_beige' => $colorBeige,
+           'color_darkRed'=> $colordarkRed
+            ,'color_green'=>$colorGreen
+            ,'color_blue'=>$colorBlue,
             'total_price' => ($totalPrice * 190),
         ]);
     
