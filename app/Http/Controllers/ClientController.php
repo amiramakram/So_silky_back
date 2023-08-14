@@ -67,7 +67,7 @@ class ClientController extends Controller
     
         $client->save();
     
-        return redirect()->route('home')->with('client', 'Client created successfully');
+        return redirect()->route('home')->with('success', 'تم استلام الطلب بنجاح ');
     }
     
 
