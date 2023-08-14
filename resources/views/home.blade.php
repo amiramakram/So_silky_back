@@ -422,18 +422,18 @@ font-family: 'Marhey';
 
 /* popDesign */
 .popup {
-    display: none;
     position: fixed;
     top: 20%;
-    left: 45%;
+    left: 42%;
     width: 400px;
     height: 400px;
-    background-color: #EDC6B5;
+    background-color: white;
     border-radius:20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .popup-content {
-    background-color: #EDC6B5;
+    background-color: white;
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
@@ -449,6 +449,32 @@ font-family: 'Marhey';
     right: 10px;
     font-size: 18px;
     cursor: pointer;
+}
+
+.Done {
+  padding: 10px 20px;
+  color: #EDC6B5;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  border:none;
+  border-radius:20px;
+  background-color:#EDC6B5;
+  color:#712504;
+}
+
+.Done:hover {
+  background: #EDC6B5;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #EDC6B5,
+              0 0 25px #EDC6B5,
+              0 0 50px #EDC6B5,
+              0 0 100px #EDC6B5;
 }
 /* end pop up */
 
@@ -712,8 +738,8 @@ font-family: 'Marhey';
         <div style="text-align: center;font-size: 2.8rem;margin-top: 30px;">اطلبي الان </div>
 
         <div class="login-box">
-  
-           <form action="{{route('client.store')}}" method="POST" onsubmit="showPopup()">
+        <!-- onsubmit="showPopup()" -->
+           <form action="{{route('client.store')}}" method="POST" >     
     @csrf
     @method('post')
 
@@ -863,15 +889,21 @@ font-family: 'Marhey';
 
 
 <!-- pop up  -->
+@if(session()->has('success'))
 
 <div id="success-popup" class="popup">
     <div class="popup-content">
-        <span class="close-popup" onclick="closePopup()">&times;</span>
         <p>تم استلام طلبك بنجاح</p>
+        <a href="{{ route('home') }}"> <button class="Done">تم</button>  </a>
     </div>
 </div>
 
+@endif
+
 <!-- end pop up -->
+
+
+
 
     <div class="row float pt-3  d-flex justify-content-center">
                   تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="">
