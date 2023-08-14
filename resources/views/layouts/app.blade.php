@@ -552,6 +552,7 @@ header {
     width: 180px;
   }
 }
+
      </style>
   <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}"> -->
   <!-- Font Awesome Icons -->
@@ -638,5 +639,8 @@ header {
         </div>
         </div>
     </div>
+
+
+    
 </body>
 </html>

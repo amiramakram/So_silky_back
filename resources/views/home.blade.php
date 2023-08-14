@@ -396,6 +396,39 @@ font-family: 'Marhey';
 }
 }
 
+/* popDesign */
+.popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    width: 400px;
+    height: 400px;
+    background-color: #EDC6B5;
+    border-radius:20px;
+}
+
+.popup-content {
+    background-color: #EDC6B5;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size:25px;
+    font-weight:700px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* end pop up */
+
+
 
       </style>
 </head>
@@ -656,7 +689,7 @@ font-family: 'Marhey';
 
         <div class="login-box">
   
-           <form action="{{route('client.store')}}" method="POST" >
+           <form action="{{route('client.store')}}" method="POST" onsubmit="showPopup()">
     @csrf
     @method('post')
 
@@ -803,6 +836,19 @@ font-family: 'Marhey';
         </div>
     </div>
     </section>
+
+
+<!-- pop up  -->
+
+<div id="success-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <p>تم استلام طلبك بنجاح!</p>
+    </div>
+</div>
+
+<!-- end pop up -->
+
     <div class="row float pt-3  d-flex justify-content-center">
                   تواصلي علئ واتس اب <a href="https://api.whatsapp.com/send?phone=966593536157"  target="">
                     <div class="floatIcon">
@@ -1155,10 +1201,23 @@ font-family: 'Marhey';
                       },
                     });
                   </script>
+
+
                 
                
             </div>
         </div>
+
+        
+              <script>
+          function showPopup() {
+              document.getElementById("success-popup").style.display = "block";
+          }
+
+          function closePopup() {
+              document.getElementById("success-popup").style.display = "none";
+          }
+          </script>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
