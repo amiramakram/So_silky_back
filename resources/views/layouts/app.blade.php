@@ -79,7 +79,7 @@
   --two-use-color: #0C80D5;
 }
 body {
-  background-color: var(--background-color4);
+  background-color: var(--background-color1);
   max-width: 100%;
   overflow-x: hidden;
 }
