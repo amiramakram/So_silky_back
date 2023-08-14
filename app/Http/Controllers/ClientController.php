@@ -47,7 +47,9 @@ class ClientController extends Controller
         $colorBeige = $data['color_beige'];
     
         $totalPrice = $colorWhite + $colorBlack + $colorGray + $colorPink + $colorBeige;
-    
+
+        
+
         $client = new Client([
             'name' => $data['name'],
             'email' => $data['email'],

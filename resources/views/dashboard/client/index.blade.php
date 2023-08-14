@@ -36,6 +36,7 @@
                     <td>{{$client->color_black}}</td>
                     <td>{{$client->color_gray}}</td>
                     <td>{{$client->color_pink}}</td>
+                    <td>{{$client->color_beige}}</td>
                     <td>{{$client->total_price}}</td>
                     
                    

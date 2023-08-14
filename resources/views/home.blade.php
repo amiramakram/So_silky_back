@@ -670,7 +670,7 @@ font-family: 'Marhey';
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="number"  name="phone_number" 
+      <input type="text"  name="phone_number" 
     value="{{old('phone_number')}}" required="">
       <label >رقم الجوال</label>
     </div>
@@ -707,7 +707,7 @@ font-family: 'Marhey';
   @enderror
 <div class="row" dir="ltr">
   <div class="user-box" >
-      <input type="text" name="color_White" 
+      <input type="number" name="color_White" 
     value="{{ old('color_White') }}" >
       <label >(ادخل الكمية المطلوبة) ابيض</label>
       @error('color_White')
@@ -717,7 +717,7 @@ font-family: 'Marhey';
     </div>
 
     <div class="user-box">
-      <input type="text" name="color_black" 
+      <input type="number" name="color_black" 
     value="{{ old('color_black') }}" >
       <label >(ادخل الكمية المطلوبة) اسود</label>
       @error('color_black')
@@ -726,7 +726,7 @@ font-family: 'Marhey';
 
     </div>
     <div class="user-box">
-      <input type="text" name="color_gray" 
+      <input type="number" name="color_gray" 
     value="{{ old('color_gray') }}" >
       <label >(ادخل الكمية المطلوبة) رمادي</label>
       @error('color_gray')
@@ -735,7 +735,7 @@ font-family: 'Marhey';
 
     </div>
     <div class="user-box">
-      <input type="text" name="color_pink" 
+      <input type="number" name="color_pink" 
     value="{{ old('color_pink') }}" >
       <label >(ادخل الكمية المطلوبة) زهري</label>
       @error('color_pink')
@@ -744,7 +744,7 @@ font-family: 'Marhey';
 
     </div>
     <div class="user-box">
-      <input type="text" name="color_beige" 
+      <input type="number" name="color_beige" 
     value="{{ old('color_beige') }}" >
       <label >(ادخل الكمية المطلوبة) بيج</label>
       @error('color_beige')

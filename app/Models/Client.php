@@ -15,11 +15,11 @@ class Client extends Model
         'phone_number',
         'emirate',
         'zone',
-        'color_White',
-        'color_black',
-        'color_gray',
-        'color_pink',
-        'color_beige',
+        'color_White' => 'nullable',
+        'color_black' => 'nullable',
+        'color_gray' => 'nullable',
+        'color_pink' => 'nullable',
+        'color_beige' => 'nullable',
         'total_price',
     ];
 

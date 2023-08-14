@@ -27,7 +27,7 @@ class StoreClientRequest extends FormRequest
             'phone_number' => 'required|string',
             'emirate' => 'required|string',
             'zone' => 'required|string',
-            'color_White' => 'nullable',
+            'color_White' => 'nullable|string',
             'color_black' => 'nullable',
             'color_gray' => 'nullable',
             'color_pink' => 'nullable',
