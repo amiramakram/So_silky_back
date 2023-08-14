@@ -902,6 +902,19 @@ font-family: 'Baloo Bhaijaan 2';
 
 @endif
 
+
+
+@if(session()->has('error'))
+<div id="success-popup" class="bg-danger popup">
+    <div class="popup-content bg-danger text-white">
+
+        <p>نأسف لم يتم استخدام اي منتج</p>
+        <a href="{{ route('home') }}"> <button class="Done">أعد المحاولة</button>  </a>
+
+    </div>
+</div>
+@endif
+
 <!-- end pop up -->
 
 
