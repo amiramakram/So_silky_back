@@ -216,7 +216,7 @@ font-family: 'Marhey';
   background: #6F6C6B  ;
  
 }
-.login-box .user-box label {
+/* .login-box .user-box label {
   position: absolute;
   top:0;
   right: 0;
@@ -226,15 +226,39 @@ font-family: 'Marhey';
   color: #fff;
   pointer-events: none;
   transition: .5s;
+} */
+
+
+/* Default styling for label */
+.user-box label {
+    position: absolute;
+    top:0;
+   right: 0;
+    padding: 10px 0;
+    font-size: 16px;
+  color: #fff;
+    /* top: 10px; /* Initial position */
+    /* left: 10px; */ 
+    pointer-events: none;
+  transition: .5s;; /* Add smooth transition */
 }
 
-.login-box .user-box input:focus ~ label,
+/* Move label up and increase font-size when input is focused */
+.user-box input:focus ~ label,
+.user-box input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  color: #EDC6B5;
+  font-size: 12px;
+}
+
+
+/* .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
   top: -20px;
   
   color: #EDC6B5;
   font-size: 12px;
-}
+} */
 
 .login-box form button {
   position: relative;
@@ -695,14 +719,14 @@ font-family: 'Marhey';
 
     <div class="user-box " >
       <input type="text"  name="name" 
-    value="{{old('name')}}" required="" >
+    value="{{old('name')}}" placeholder="ادخل الاسم" required="" >
       <label >الاسم</label>
     </div>
     @error('name')
       <div class="alert alert-danger">{{$message}}</div>
       @enderror
     <div class="user-box">
-      <input type="email"  name="email" 
+      <input type="email"  name="email"  placeholder="ادخل الايميل"
     value="{{old('email')}}" required="">
       <label >الايميل</label>
     </div>
@@ -710,7 +734,7 @@ font-family: 'Marhey';
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="text"  name="phone_number" 
+      <input type="text"  name="phone_number" placeholder="ادخل رقم الجوال"
     value="{{old('phone_number')}}" required="">
       <label >رقم الجوال</label>
     </div>
@@ -738,7 +762,7 @@ font-family: 'Marhey';
   <div class="alert alert-danger">{{$message}}</div>
   @enderror
     <div class="user-box">
-      <input type="text"  name="zone" 
+      <input type="text"  name="zone" placeholder="ادخل اسم المنطقة"
     value="{{old('zone')}}" required="">
       <label >اسم المنطقة</label>
     </div>
@@ -747,7 +771,7 @@ font-family: 'Marhey';
   @enderror
 
   <div class="user-box " >
-      <input type="text"  name="color_White" 
+      <input type="number"  name="color_White" placeholder="ادخل رقم"
     value="{{ old('color_White') }}"  >
       <label >ابيض (ادخل الكمية المطلوبة-اختياري)</label>
     </div>
@@ -758,7 +782,7 @@ font-family: 'Marhey';
    
 
     <div class="user-box">
-      <input type="number" name="color_black" 
+      <input type="number" name="color_black" placeholder="ادخل رقم"
     value="{{ old('color_black') }}" >
       <label >(ادخل الكمية المطلوبة) اسود</label>
       </div>
@@ -768,7 +792,7 @@ font-family: 'Marhey';
 
    
     <div class="user-box">
-      <input type="number" name="color_gray" 
+      <input type="number" name="color_gray"  placeholder="ادخل رقم"
     value="{{ old('color_gray') }}" >
       <label >(ادخل الكمية المطلوبة) رمادي</label>
       </div>
@@ -778,7 +802,7 @@ font-family: 'Marhey';
 
     
     <div class="user-box">
-      <input type="number" name="color_pink" 
+      <input type="number" name="color_pink"  placeholder="ادخل رقم"
     value="{{ old('color_pink') }}" >
       <label >(ادخل الكمية المطلوبة) زهري</label>
       </div>
@@ -788,7 +812,7 @@ font-family: 'Marhey';
 
     
     <div class="user-box">
-      <input type="number" name="color_beige" 
+      <input type="number" name="color_beige"  placeholder="ادخل رقم"
     value="{{ old('color_beige') }}" >
       <label >(ادخل الكمية المطلوبة) بيج</label>
       </div>
@@ -797,7 +821,7 @@ font-family: 'Marhey';
   @enderror
    
     <div class="user-box">
-      <input type="number" name="color_darkRed" 
+      <input type="number" name="color_darkRed"  placeholder="ادخل رقم"
       value="{{ old('color_darkRed') }}" >
       <label >(ادخل الكمية المطلوبة) نبيتي</label>
       </div>
@@ -807,7 +831,7 @@ font-family: 'Marhey';
       @enderror
     
     <div class="user-box">
-      <input type="number" name="color_green" 
+      <input type="number" name="color_green"  placeholder="ادخل رقم"
       value="{{ old('color_green') }}" >
       <label >(ادخل الكمية المطلوبة) اخضر</label>
       </div>
@@ -817,7 +841,7 @@ font-family: 'Marhey';
    
     
     <div class="user-box">
-      <input type="number" name="color_blue" 
+      <input type="number" name="color_blue"  placeholder="ادخل رقم"
       value="{{ old('color_blue') }}" >
       <label >(ادخل الكمية المطلوبة-اختياري) ازرق</label>
       </div>
@@ -843,7 +867,7 @@ font-family: 'Marhey';
 <div id="success-popup" class="popup">
     <div class="popup-content">
         <span class="close-popup" onclick="closePopup()">&times;</span>
-        <p>تم استلام طلبك بنجاح!</p>
+        <p>تم استلام طلبك بنجاح</p>
     </div>
 </div>
 
